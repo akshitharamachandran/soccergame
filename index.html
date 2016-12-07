@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Soccer Game</title>
+    <link rel="icon" sorce="img/soccerball.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Soccer Game</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rules">Rules</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#game">Game</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Evolution</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Soccer Game!</div>
+                <div class="intro-heading">Join the Fun</div>
+                <a href="#rules" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rules Section -->
+    <section id="rules" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Rules</h2>
+                    <h3 class="section-subheading text-muted">The guidelines to follow if you're trying to beat us.</h3>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <ol>
+                    <h3>
+                        <li>Place your mouse on the playing field</li><hr><hr>
+                        <li>Use the arrow keys to move your player</li><hr><hr>
+                        <li>Move the ball using your player</li><hr><hr>
+                        <li> Try to get the ball in the goal on the opposite side of the field</li><hr><hr>
+                        <li>Go! Fight! Win!</li>
+                    </h3>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game">
+        <div>
+            <center>
+                <h2 class="section-heading">The Game</h2>
+                <div>
+                    <canvas id="canvas" width="1000" height="500">
+                        <script src="test.js"></script>
+                    </canvas>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Game Evolution</h2>
+                    <h3 class="section-subheading text-muted">The journey "Soccer Game" has taken from random neural networks to trained attackers and defenders.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-5 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/RandomAttacker.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Untrained Attacker</h4>
+                        <p class="text-muted">Unevolved</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TrainedAttacker.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Trained Attacker</h4>
+                        <p class="text-muted">Evolved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-5 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/RandomDefender.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Untrained Defender</h4>
+                        <p class="text-muted">Unevolved</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TrainedDefender.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Trained Defender</h4>
+                        <p class="text-muted">Evolved</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">The details about Soccer Game!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <a href="https://docs.google.com/a/college.harvard.edu/document/d/1SQ2xKqknVpd533FzcZy0NxWo3nLp0DUIN1LQYVEW65w/edit?usp=sharing">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Documentation</h3>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Click on the document image to learn more about downloading the code and viewing it in a web browser!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <a href="https://docs.google.com/a/college.harvard.edu/document/d/1dAjGYu-Bnqq698dpuayQZqQ7z2r5oWCYa5kabSGwXCk/edit?usp=sharing">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Design</h3>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Click on the design image to learn more about the development of our AI and decisions we've made throughout the project!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Video</h3>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Click on the movie icon to view a short video about our project and watch a game played against the AI!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Code</h3>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Click on the Github octocat to view all our code from the HTML and JavaScript to the Python!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Join
+                                    <br>the
+                                    <br>fun!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">CS50 Students At Harvard</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Akshitha Ramachandran</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>John Na</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kendall Zhu</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Just three computer science students trying to finish their final project...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a href="https://cs50.harvard.edu/staff">
+                        <img src="img/logos/will.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">
+                        <img src="img/logos/duckdebug.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://cs.harvard.edu/malan/">
+                        <img src="img/logos/david.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; CS50 2016</span>
+                </div>
+                
+                <div class="col-md-6">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="https://startbootstrap.com/template-overviews/agency/">Website Template</a>
+                        </li>
+                        <li><a href="https://cs50.harvard.edu/">CS50</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Untrained Attacker</h2>
+                                <p class="item-intro text-muted">A player with a random neural net is placed on a field with a ball and a goal to assess its goal-scoring abilities.</p>
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/T2-PvNIJN3Q" frameborder="0" allowfullscreen></iframe>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Trained Attacker</h2>
+                                <p class="item-intro text-muted">The highest performing attacker after 100 generations of evolution.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4pYsgKiuDkg" frameborder="0" allowfullscreen></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Untrained Defender</h2>
+                                <p class="item-intro text-muted">A random player paired up with a semi-evolved attacker to assess its defensive abilities.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/48q57G8XOpY" frameborder="0" allowfullscreen></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Trained Defender</h2>
+                                <p class="item-intro text-muted">The highest performing defender after 50+ generations.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OYlUMzTW2Ok" frameborder="0" allowfullscreen></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
