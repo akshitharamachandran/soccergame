@@ -1,18 +1,23 @@
-Introduction:
-Soccer Game is a 1 v. 1 game where a human can play against a computer. The "computer" is an AI that was generated using neural networks in python. The weights of the best player after 50+ generations in python is then passed into the javascript code necessary for the website.
+SOCCER GAME DOCUMENTATION
 
-Download:
+
+INTRODUCTION:
+Soccer Game is a 2 v. 2 game where a human can play against a computer. The "computer" is an AI that was generated using neural networks in python. The weights of the best player after 50+ generations in python are then passed into the javascript code necessary for the website. Each move for the AI is then calculated by passing in the location of the ball and goal relative to the player into the neural net with the desired weights.
+
+
+DOWNLOAD:
 1. Download the "soccergame.zip" file that was submitted. 
 2. Unzip the file.
 3. Double click "index.html" once in the soccergame folder, and a "Soccer Game" webpage should open up in the computer's default web-browser. 
 
-Using the Program:
+
+USING THE PROGRAM:
 1. Ensure that the computer is on the internet (some tags in the html code are linked to websites). 
-2. The webpage is divided into five sections (excluding the default landing page with an image of a soccer ball on a field). Each section can be accessed using the navigation bar at the top of the website or by scrolling up and down the webpage. 
+2. The web page is divided into five sections (excluding the default landing page with an image of a soccer ball on a field). Each section can be accessed using the navigation bar at the top of the website or by scrolling up and down the webpage. 
 3. The details of each section are as follows:
 	a. Rules - This section explains the rules/guidelines for a user to follow if they are playing the game.
 	b. Game - This is meat and potatoes of the project. This section contains the soccer game that a user can play against our AI. Following the rules explained in the aforementioned section, they can use their sprite to score goals and navigate across the soccer field with arrow keys. 
 	c. Evolution - This section explains the evolution of our neural networks for the two roles the AI can play: an attacker or a defender. All four examples can be clicked and a window opens with greater details including a short description of the state of the player and a video of it in action. 
-	d. About - This section includes the program's documentation, design specifications, code, and a short video. The final project code requires that we submit these details as well. 
+	d. About - This section includes the program's documentation, design specifications, code, and a short video. The final project code requires that we submit these documents as well. 
 	e. Team - This section contains images of all team members.
-4. At the bottom of the webpage our sponsors have been listed along with a link to the website template and CS50 webpage.
+4. At the bottom of the web page our sponsors have been listed along with a link to the website template and CS50 webpage.

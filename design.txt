@@ -1,0 +1,28 @@
+SOCCER GAME DESIGN DOCUMENT
+
+
+INTRODUCTION:
+There were two parts in the implementation of the project: The development of the AI along with a prototyped version of the game itself, and the implementation of the web version of the game that allows a user to play against the AI.
+
+
+PYTHON:
+The AI development occurred in python, using mostly plain python code for both the game physics and the basic neural net. Granted, manually putting together a logic for an AI might have resulted in a more effective program. Also, using more outside libraries and code would have enabled us to do more complex neural networks. However, we chose to implement both our own game and neural network to express our creativity. The result was intended as more of a proof of concept rather than a functional product. 
+
+The python code is written in python 3.2 (non 64-bit) and uses the pygame package to open a window and draw the graphics while playing. It uses classes for the player, and ball, and an instinct class to handle the neural network. There are several helper functions for the game physics, and also functions to play a random game using a game loop with the update and draw functions. Each player determines its movement based on its unique set of weights in its neural net. The net is structured so that each layer of nodes adds up the sum of the products of the weights and the output values of the connections it has to the previous layer, then puts the sum through a variation of the sigmoid function to confined its own output to between -1 and 1. The outputs are two values, which are interpreted roughly (not physically accurate but estimated) as wheel speeds of a left and right wheel, which then is converted to movement, both forward travelling and turning. Below is a diagram of the network (for google doc only):
+
+One aspect this document has not addressed yet is the inputs to the network. That is because the inputs evolved and have special justification. At first, we attempted to input large, detailed values into the code, particularly the positions of the ball and the player. However, not only were these values not very conducive to the small value nature of the neural net, but they were also very static. Eventually, we arrived on the idea of inputting the positions of the ball and the goal, but using the player as the origin of the coordinate system, and using the current direction of the player as the y-axis. By allowing the player to turn through wheels, this creates dynamism as all the coordinates will shift with every frame. The values are also all -1 and 1, to express that the ball or goal is right or left, or in front or behind. This simplifies the information being inputted into network and allows the AI to manifest decisive behaviors. 
+
+Crucially, the python code also includes mechanisms for evolving players with the AI. Without any evolution, the players generated with random weights are not effective at scoring goals. Many just vibrate or go off in random directions. However, with the power of random number generation, we create thousands of these sets of weights and test them for any that produce desired behaviors. These successful players are retested, and depending on their performance in a set of 10 random scenarios, are mutated and placed in the next generation. The better they perform, the more babies they make. This random method often takes many generations to even start improving, since it relies on randomly bumping into a set of weights that actually constitutes a strategy/behavior that has potential. Then, using this brain as a launching pad, it evolves and selects better and better versions by placing random variations on the weights. The performance outcome depends on the selective pressures applied to the players when they are evolved. At first, the players exhibited consistent scoring but were rather inefficient. To increase efficiency, we began grading fitness on time spent scoring goals as well as percentage scored. Meanwhile, defenders were trained with similar methods, running random players together with pre-trained scoring AI and selecting for ones that inhibited the scorer the most effectively and for the longest.
+
+
+WEB DEVELOPMENT:
+The website is based off of a “Start Bootstrap” template. The necessary html and css files were downloaded from the free template available online and we adapted it as we saw fitting for our purposes. The significant changes include:
+1. Changing all the text in sections to fit our needs 
+2. Embedding videos to display the evolution of our players
+3. Altering the css files to change certain display settings
+4. Adding links and icons to the “About” section
+5. Incorporating our own creativity and humor throughout the site
+
+As for the implementation of the game on the webpage, the optimal weights for player (using the neural net) are generated using the python script. Those values are then passed into the test.js file as constants. After each move, the position of the AI relative to the soccer ball and goal is then passed into the neural net and using the desired weights its next move is calculated. 
+
+The actual implementation of the game in javascript is slightly different than the test game in which the players were evolved, though the basic mechanics are all the same. The neural networks now only apply to the AI controlled bots, while the user controlled players are made to take keyboard input. We make sure at the very least that the maximum speed of the AI is not greater than the speed of the user controlled player, so that it isn’t too unfair. 
