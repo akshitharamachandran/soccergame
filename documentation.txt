@@ -2,7 +2,7 @@ SOCCER GAME DOCUMENTATION
 
 
 INTRODUCTION:
-Soccer Game is a game where a human can play against a computer. The "computer" is an AI that was generated using neural networks in python. The weights of the best player after 50+ generations in python are then passed into the javascript code necessary for the website. Each move for the AI is then calculated by passing in the location of the ball and goal relative to the player into the neural net with the desired weights.
+Soccer Game is a game where a human can play against a computer. The "computer" is an AI that was generated using neural networks. The weights of the best player after 50+ generations in python are then passed into the javascript code necessary for the website. Each move for the AI is then calculated by passing in the location of the ball and goal relative to the player into the neural net with the desired weights.
 
 
 DOWNLOAD:
@@ -21,3 +21,6 @@ USING THE PROGRAM:
 	d. About - This section includes the program's documentation, design specifications, code, and a short video. The final project code requires that we submit these documents as well. 
 	e. Team - This section contains images of all team members.
 4. At the bottom of the web page our sponsors have been listed along with a link to the website template and CS50 webpage.
+
+VIDEO:
+The following link is to our demo video: 
