@@ -4,7 +4,7 @@ Soccer Game is a game displayed on a website where a user can play against a neu
 
 ## The Neural Network
 
-A neural network is created in python to breed both the "attacker" and "defender" conponents of the AI. The highest performing attacker after 100 generations of evolution is used in the for that position and same goes for the defender after 50 generations. 
+A neural network is created in python to breed both the "attacker" and "defender" conponents of the AI. The highest performing attacker after 100 generations of evolution is used for that position and same goes for the defender after 50 generations. 
 
 ## The Website
 

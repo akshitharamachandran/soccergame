@@ -6,7 +6,7 @@ Soccer Game is a game where a human can play against a computer. The "computer" 
 
 
 DOWNLOAD:
-1. Download the "soccergame.zip" file that was submitted. 
+1. Download the "soccergame.zip" file that was submitted via GitHub. 
 2. Unzip the file.
 3. Double click "index.html" once in the soccergame folder, and a "Soccer Game" webpage should open up in the computer's default web-browser. 
 
