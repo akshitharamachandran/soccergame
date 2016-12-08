@@ -23,4 +23,4 @@ USING THE PROGRAM:
 4. At the bottom of the web page our sponsors have been listed along with a link to the website template and CS50 webpage.
 
 VIDEO:
-The following link is to our demo video: 
+The following link is to our demo video: https://youtu.be/mGN5xBgBROk
