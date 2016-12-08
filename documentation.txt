@@ -2,7 +2,7 @@ SOCCER GAME DOCUMENTATION
 
 
 INTRODUCTION:
-Soccer Game is a 2 v. 2 game where a human can play against a computer. The "computer" is an AI that was generated using neural networks in python. The weights of the best player after 50+ generations in python are then passed into the javascript code necessary for the website. Each move for the AI is then calculated by passing in the location of the ball and goal relative to the player into the neural net with the desired weights.
+Soccer Game is a game where a human can play against a computer. The "computer" is an AI that was generated using neural networks in python. The weights of the best player after 50+ generations in python are then passed into the javascript code necessary for the website. Each move for the AI is then calculated by passing in the location of the ball and goal relative to the player into the neural net with the desired weights.
 
 
 DOWNLOAD:
